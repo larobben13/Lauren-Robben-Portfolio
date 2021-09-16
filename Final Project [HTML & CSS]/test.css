@@ -1,0 +1,163 @@
+* {box-sizing:border-box;}
+
+body {background-color: #2F4F4F;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;}
+
+#wrapper { background-image: linear-gradient (to bottom, #696969, #000080) ; 
+	 	 background-repeat: no-repeat; 
+		 background-color: #778899;}
+
+header {background-color:#696969;
+	color:#696969;
+	background-image: url("Images/grass3.jpg");
+	background-position: none;
+	background-repeat: repeat;
+	line-height: 500%;
+	text-indent: 1em;}
+
+h1 {color: #FFFFFF;
+font-family: Gerogia, "Times New Roman", serif;
+text-align: center; }
+
+nav {text-align: center;
+	 font-weight: bold;
+	 padding: 0;
+	 font-size: 120%;}
+
+nav u {list-style-type: none;
+	   margin: 0;
+	   font-size: 1.2em;}
+
+nav a {text-decoration: none;}
+
+nav a:link {color:#FFFFFF;}
+
+nav a:visited {color: #FFFFFF;}
+
+nav a:hover {color: #FFFFFF;}
+
+nav li {border-bottom: 1px solid #808080;}
+
+main {padding: 1px 20px 20px 30px;
+	  display: block;
+	  background-color: #696969;
+	  overflow: auto;}
+	  
+#homepage  {height: 300px;
+		   background-image: url(nature2.jpg);
+		   background-size: 100% 100%;
+		   background-repeat: no-repeat;}
+
+h2 {color: #2F4F4F;
+font-family: Gerogia, "Times New Roman", serif;}
+
+dt {color: #808080;}
+
+h1 {margin-bottom: 0;
+	margin-top: 0;
+	font-family: Gerogia, "Times New Roman", serif;
+	letter-spacing: .25em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;}
+
+h3 {font-family: Gerogia, "Times New Roman", serif;
+color: #FFFFFF}
+
+ul {list-style-image: url(marker.gif);}
+
+footer {font-size: 75%;
+		font-style: italic;
+		text-align: center;
+		font-family: Gerogia, "Times New Roman", serif;
+		padding: 2em;
+		background-color: #696969;}
+
+#contact {font-size; 90%}
+
+#gallery {position: relative;
+			height:200px;
+  			clear: both}
+  		
+#gallery ul {width:300px;
+			list-style-type:none;}
+
+#gallery li {display: inline-block;
+    		padding: 5px 10px;}
+    		
+#gallery img {border-style:none;
+			float:none;}
+  
+#gallery a {text-decoration:none;
+  			font-style:italic;
+  			color:#333333;}
+  
+#gallery span {display: none;}
+
+#gallery a:hover span {display: block;
+						position: absolute;
+						top: 10px;
+						left: 340px;
+						text-align: center;}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.row::before {
+  content: "Tee Shirts";
+  text-align: center
+  clear: both;
+  display: table;
+}
+
+
+@media (min-width: 600px) {
+		nav ul {display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-around;}
+		nav li {border-bottom: none;}
+		section {padding-left: 2em;
+				padding-right: 2em;}
+		.content main {display: grid;
+						grid-template-rows: auto;
+						grid-template-columns: 1fr 1fr 1fr;}
+		h2 {grid-row: 1 / 2; grid-column: 1 / 5;}
+		section {grid-row: 2 / 3; grid-column: auto;}
+		#special {grid-row: auto; grid-column: 1 / 5;}
+		footer {grid-row: auto; grid-column: 1 / 5:}
+
+}
+
+@media (min-width: 1024px) {
+		nav ul {display: flex;
+				flex-flow: column;
+				padding-top: 1em;}
+		nav {text-align: left;
+			padding-left: 1em;}
+		#wrapper {margin: auto;
+				  width: 80%;
+				  border: 1px solid #000033;
+				  box-shadow: 1px 1px #000033;
+				  display: grid;
+				  grid-template-columns: 180px auto;
+				  grid-template-rows: auto;}
+		header {grid-row: 1 / 2; grid-column: 1 / 3;}
+		nav {grid-row: 2 / 5; grid-column: 1 / 2;}
+		div {grid-row: 2 / 3; grid-column: 2 / 3;}
+		main {grid-row: 3 / 4; grid-column: 2 / 3:} 			  
+		footer {grid-row: 4 / 5; grid-column: 2 / 3:}		  
+				
+}
+
+
+
+
+
+
+
+
+
